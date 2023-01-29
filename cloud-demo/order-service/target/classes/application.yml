@@ -12,6 +12,8 @@ spring:
   cloud:
     nacos:
       server-addr: localhost:8848
+      discovery:
+        cluster-name: HangZhou #集群名称，代指杭州
 mybatis:
   type-aliases-package: cn.itcast.order.pojo
   configuration:
@@ -32,7 +34,7 @@ logging:
 
 userservice: # 给某个微服务配置负载均衡规则，这里是userservice服务
   ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule # 负载均衡规则
+    NFLoadBalancerRuleClassName: com.alibaba.cloud.nacos.ribbon.NacosRule # 负载均衡规则
 
 ribbon:
   eager-load:
