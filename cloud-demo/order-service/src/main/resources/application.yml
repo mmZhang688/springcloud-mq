@@ -8,6 +8,10 @@ spring:
     username: root
     password: 1234
     driver-class-name: com.mysql.jdbc.Driver
+
+  cloud:
+    nacos:
+      server-addr: localhost:8848
 mybatis:
   type-aliases-package: cn.itcast.order.pojo
   configuration:
@@ -21,10 +25,10 @@ logging:
 
 
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:10086/eureka
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:10086/eureka
 
 userservice: # 给某个微服务配置负载均衡规则，这里是userservice服务
   ribbon:
