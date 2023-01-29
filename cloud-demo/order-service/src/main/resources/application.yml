@@ -1,0 +1,36 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: orderserver
+  datasource:
+    url: jdbc:mysql://localhost:3306/could_order?useSSL=false
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  type-aliases-package: cn.itcast.order.pojo
+  configuration:
+    map-underscore-to-camel-case: true
+logging:
+  level:
+    cn.itcast: debug
+  pattern:
+    dateformat: MM-dd HH:mm:ss:SSS
+
+
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
+
+userservice: # 给某个微服务配置负载均衡规则，这里是userservice服务
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule # 负载均衡规则
+
+ribbon:
+  eager-load:
+    enabled: true
+    clients: userservice
