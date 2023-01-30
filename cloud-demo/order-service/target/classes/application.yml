@@ -14,6 +14,7 @@ spring:
       server-addr: localhost:8848
       discovery:
         cluster-name: HangZhou #集群名称，代指杭州
+        namespace: 21 #指定命名空间
 mybatis:
   type-aliases-package: cn.itcast.order.pojo
   configuration:
