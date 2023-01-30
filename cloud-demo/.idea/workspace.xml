@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddf2ad15-7cfc-41ae-bc42-6c32ffe864f6" name="Changes" comment="使用nacos完成 临时实例的配置，并且配置了命名空间！">
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/cn/itcast/user/config/PatternProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/resources/bootstrap.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="ddf2ad15-7cfc-41ae-bc42-6c32ffe864f6" name="Changes" comment="使用nacos完成 配置管理">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/cn/itcast/user/config/PatternProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/cn/itcast/user/config/PatternProperties.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/java/cn/itcast/user/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/cn/itcast/user/web/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/bootstrap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/bootstrap.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/target/classes/cn/itcast/user/web/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/classes/cn/itcast/user/web/UserController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +104,7 @@
       </method>
     </configuration>
     <configuration name="UserApplication2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false">
-      <option name="ACTIVE_PROFILES" />
+      <option name="ACTIVE_PROFILES" value="test" />
       <module name="user-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.itcast.user.UserApplication" />
       <option name="VM_PARAMETERS" value="-Dserver.port=8082" />
@@ -143,7 +144,7 @@
       <updated>1674993373861</updated>
       <workItem from="1674993375373" duration="8117000" />
       <workItem from="1675041588223" duration="6000" />
-      <workItem from="1675049579640" duration="1904000" />
+      <workItem from="1675049579640" duration="5184000" />
     </task>
     <task id="LOCAL-00001" summary="使用eureka完成服务注册和配置的代码案例！">
       <created>1674999018652</created>
@@ -187,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675049897515</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="使用nacos完成 配置管理">
+      <created>1675062331298</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1675062331298</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +220,7 @@
     <MESSAGE value="使用nacos完成服务注册和配置的代码案例！" />
     <MESSAGE value="使用nacos完成集群配置" />
     <MESSAGE value="使用nacos完成 临时实例的配置，并且配置了命名空间！" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用nacos完成 临时实例的配置，并且配置了命名空间！" />
+    <MESSAGE value="使用nacos完成 配置管理" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用nacos完成 配置管理" />
   </component>
 </project>

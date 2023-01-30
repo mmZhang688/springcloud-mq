@@ -11,10 +11,10 @@ spring:
 
   cloud:
     nacos:
-      server-addr: localhost:8848
+      server-addr: localhost:80
       discovery:
         cluster-name: HangZhou #集群名称，代指杭州
-        namespace: 21 #指定命名空间
+        #namespace: 21 #指定命名空间
         ephemeral: false #设置为非临时实例
 mybatis:
   type-aliases-package: cn.itcast.order.pojo
