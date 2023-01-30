@@ -1,8 +1,5 @@
 package cn.itcast.order;
 
-import cn.itcast.order.config.FeignConfig;
-import com.netflix.loadbalancer.IRule;
-import com.netflix.loadbalancer.RandomRule;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,7 +10,7 @@ import org.springframework.web.client.RestTemplate;
 
 @MapperScan("cn.itcast.order.mapper")
 @SpringBootApplication
-@EnableFeignClients
+@EnableFeignClients(basePackages = "cn.itcast.feign.clients")
 //如果要全局生效，将其放到启动类的@EnableFeignClients这个注解中：
 //@EnableFeignClients(defaultConfiguration = FeignConfig.class)
 public class OrderApplication {
