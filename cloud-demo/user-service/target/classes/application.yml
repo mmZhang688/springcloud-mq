@@ -13,6 +13,7 @@ spring:
       server-addr: localhost:8848
       discovery:
         cluster-name: HangZhou #集群名称，代指杭州
+        #namespace: 21
 
 
 
@@ -30,3 +31,6 @@ logging:
 #  client:
 #    service-url:
 #      defaultZone: http://localhost:10086/eureka
+
+pattern:
+  name: 本地环境local

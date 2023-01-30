@@ -10,7 +10,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
   cloud:
     nacos:
-      server-addr: localhost:80
+      server-addr: localhost:8848
       discovery:
         cluster-name: HangZhou #集群名称，代指杭州
         #namespace: 21

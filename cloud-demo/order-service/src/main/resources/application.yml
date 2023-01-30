@@ -11,7 +11,7 @@ spring:
 
   cloud:
     nacos:
-      server-addr: localhost:80
+      server-addr: localhost:8848
       discovery:
         cluster-name: HangZhou #集群名称，代指杭州
         #namespace: 21 #指定命名空间
@@ -28,7 +28,6 @@ logging:
 
 
 
-
 #eureka:
 #  client:
 #    service-url:
@@ -42,3 +41,11 @@ ribbon:
   eager-load:
     enabled: true
     clients: userservice
+
+
+# 配置feign的日志级别
+#feign:
+#  client:
+#   config:
+#      default:
+#       loggerLevel: FULL #  日志级别
