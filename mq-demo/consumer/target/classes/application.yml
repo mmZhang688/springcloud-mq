@@ -9,3 +9,6 @@ spring:
     host: 8.130.19.63
     virtual-host: /
     port: 5672
+    listener:
+      simple:
+        prefetch: 1
