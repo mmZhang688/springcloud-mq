@@ -1,0 +1,10 @@
+logging:
+  pattern:
+    dateformat: MM-dd HH:mm:ss:SSS
+spring:
+  rabbitmq:
+    host: 8.130.19.63
+    port: 5672
+    virtual-host: /
+    username: root
+    password: 123456
